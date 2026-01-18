@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas:
+          "head head head"
+          "nav  art  side"
+          "foot foot foot";
+        gap: 5px;
+        color: white;
+        height: 300px;
+        text-align: center;
+      }
+
+      header {
+        padding-top: 20px;
+        background-color: rgba(88, 111, 178);
+        grid-area: head;
+      }
+
+      nav {
+        padding-top: 20px;
+        background-color: rgba(175, 92, 42);
+        grid-area: nav;
+      }
+
+      article {
+        padding-top: 20px;
+        background-color: rgba(136, 174, 65);
+        grid-area: art;
+      }
+
+      aside {
+        padding-top: 20px;
+        background-color: rgba(175, 92, 42);
+        grid-area: side;
+      }
+
+      footer {
+        padding-top: 20px;
+        background-color: rgba(88, 111, 178);
+        grid-area: foot;
+      }
+      @media (max-width: 500px) {
+        section {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(5, 1fr);
+          grid-template-areas:
+            "head"
+            "nav"
+            "art"
+            "side"
+            "foot";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>HEADER</header>
+      <nav>SIDENAV</nav>
+      <article>MAIN CONTENT</article>
+      <aside>SIDEBAR</aside>
+      <footer>FOOTER</footer>
+    </section>
+  </body>
+</html>

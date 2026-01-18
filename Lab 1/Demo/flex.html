@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: aqua;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center;
+        align-items: flex-end; */
+        height: 500px;
+        /* align-items: baseline; */
+        /* align-content: space-between; */
+        /* gap:50px 200px; */
+        /* width: 150px; */
+      }
+      .parent > div {
+        background-color: blueviolet;
+        margin: 20px;
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+        /* width: 150px; */
+      }
+      .child3 {
+        font-size: 100px;
+        order: -1;
+        /* flex-grow: 2; */
+      }
+      .child1 {
+        font-size: 50px;
+        order: 2;
+        /* flex-grow: 1; */
+        /* flex-shrink: 0; */
+        /* flex-basis: 200px;
+        height: 500px;
+        width: 1000px; */
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <!-- <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div> -->
+    </div>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      molestiae hic qui deleniti ab et odit omnis velit sit eaque, iusto dolorem
+      modi laboriosam iure distinctio reprehenderit, ducimus doloribus
+      dolore.</span
+    >
+  </body>
+</html>

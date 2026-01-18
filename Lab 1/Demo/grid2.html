@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        /* height: 100vh; */
+        background-color: aquamarine;
+        /* grid-auto-rows: minmax(200px,auto); */
+        display: grid;
+        grid-template-areas:
+          "nav nav nav nav"
+          "aside art art art"
+          "aside art art art"
+          "foot foot foot foot";
+      }
+      aside {
+        background-color: blueviolet;
+        grid-area: aside;
+      }
+      article {
+        background-color: yellow;
+        grid-area: art;
+      }
+      nav {
+        background-color: cadetblue;
+        grid-area: nav;
+      }
+      footer {
+        background-color: rgb(135, 12, 110);
+        grid-area: foot;
+      }
+      /* @media (500px<=width<=900px){
+            body{
+                background-color: aqua;
+            }
+        } */
+      /*  bootstrap */
+      /* min-width:0px ==> default */
+      @media (min-width: 500px) {
+        body {
+          background-color: blue;
+        }
+        section {
+          grid-template-areas:
+            "nav"
+            "aside"
+            "art"
+            "foot";
+        }
+      }
+      @media (min-width: 900px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media (min-width: 1200px) {
+        body {
+          background-color: blanchedalmond;
+        }
+        section {
+          grid-template-areas:
+            "nav nav nav nav"
+            "aside art art art"
+            "aside art art art"
+            "foot foot foot foot";
+        }
+      }
+      /* @media(max-width:500px){}
+          @media (min-width:501px) and (max-width:900px){} */
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>nav</nav>
+      <aside>aside</aside>
+      <article>article</article>
+      <footer>footer</footer>
+    </section>
+  </body>
+</html>
